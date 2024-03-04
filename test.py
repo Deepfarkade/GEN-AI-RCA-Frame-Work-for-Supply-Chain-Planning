@@ -23,7 +23,7 @@ TF_ENABLE_ONEDNN_OPTS = 0
 
 
 # Load spaCy model
-nlp = spacy.load("en_core_web_lg")
+nlp = 1 #spacy.load("en_core_web_lg")
 
 # Define path to the predefined questions JSON file
 #PREDEFINED_QUESTIONS_FILE = "predefined_questions.json"
