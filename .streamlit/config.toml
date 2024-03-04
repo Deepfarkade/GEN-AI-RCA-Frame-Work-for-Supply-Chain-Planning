@@ -4,3 +4,5 @@ backgroundColor="#111827"
 secondaryBackgroundColor="#1f2937"
 textColor="#9ca3af"
 font="sans serif"
+[server]
+sslCertFile = 'cert.crt'
