@@ -1,7 +1,10 @@
 import streamlit as st
 import vanna 
+import os
 from sql_execution import execute_sql_query
 from vanna.remote import VannaDefault
+
+os.environ['REQUESTS_CA_BUNDLE'] = 'cert.crt'
 
 api_key = "2e8f6ca84f514b6eab6250c51f6a6d93"
 vanna_model_name = "esp_model"

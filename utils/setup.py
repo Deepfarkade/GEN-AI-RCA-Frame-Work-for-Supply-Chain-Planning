@@ -4,6 +4,8 @@ import vanna
 from dotenv import load_dotenv
 from vanna.remote import VannaDefault
 
+os.environ['REQUESTS_CA_BUNDLE'] = 'cert.crt'
+
 
 @st.cache_resource(ttl=3600)
 def setup_connexion():
