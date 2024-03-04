@@ -1,6 +1,11 @@
 import streamlit as st
-import vanna as vn
+import vanna 
 from sql_execution import execute_sql_query
+from vanna.remote import VannaDefault
+
+api_key = "2e8f6ca84f514b6eab6250c51f6a6d93"
+vanna_model_name = "esp_model"
+vn = VannaDefault(model=vanna_model_name, api_key=api_key)
 
 
 @st.cache_data(show_spinner="Generating sample questions ...")
@@ -8,12 +13,12 @@ def generate_questions_cached():
     return vn.generate_questions()
 
 
-@st.cache_data(show_spinner="Generating SQL query ...")
+#@st.cache_data(show_spinner="Generating SQL query ...")
 def generate_sql_cached(question: str):
     return vn.generate_sql(question=question)
 
 
-@st.cache_data(show_spinner="Running SQL query ...")
+#@st.cache_data(show_spinner="Running SQL query ...")
 def run_sql_cached(sql: str):
     #return vn.run_sql(sql=sql)
     return execute_sql_query(sql=sql)
