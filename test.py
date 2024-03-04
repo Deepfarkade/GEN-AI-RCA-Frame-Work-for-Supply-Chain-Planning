@@ -177,7 +177,7 @@ def conversation_chat(query):
 
 
 # Initialize Streamlit app
-st.title("Gen AI Chatbot")
+st.title("Gen AI : RCA Framework for Supply Chain Planning")
 st.markdown('<style>h1{color: orange; text-align: center;}</style>', unsafe_allow_html=True)
 
 # Check for logged_out query parameter to render login page
