@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-import vanna as vn
+import vanna
 from dotenv import load_dotenv
 from vanna.remote import VannaDefault
 
@@ -8,7 +8,7 @@ from vanna.remote import VannaDefault
 @st.cache_resource(ttl=3600)
 def setup_connexion():
     if "vanna_api_key" in st.secrets and "gcp_project_id" in st.secrets:
-        api_key = os.environ.get("vanna_api_key")
+        api_key = "2e8f6ca84f514b6eab6250c51f6a6d93"
         vanna_model_name = "esp_model"
         vn = VannaDefault(model=vanna_model_name, api_key=api_key)
     else:
