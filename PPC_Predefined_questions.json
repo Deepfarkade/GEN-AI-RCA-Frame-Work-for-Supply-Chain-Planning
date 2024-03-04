@@ -1,0 +1,14 @@
+[
+    "What is the overall fil rate for the All Month",
+    "Give me the need quantity, met quantity and Fillrate for every dmdtype and date",
+    "Give me the product groupwise Fillrates & different demand type fill rates for all months",
+    "Can I see the complete details of demand satifscation for all product group, segments, customers type and priorities for all Months?",
+    "In which all sources NOSP product group are there ?",
+    "Show me the Resource Utilization for all the plants",
+    "Can you give the exact Resources & resource utilization on which NOSP Items can be produced month wise",
+    "How can we Improve NOSP product group Fill rates?",
+    "Show me the most Underutilised Resources for all the plants",
+    "Can you give me the most Underutilised Resources for 1001",
+    "Can you please check is there any Unmet Demand which can be produced for VJBRM1 Resource",
+    "How much Demand can we Increase in VJBRM1 Resource for maximum Resource Utilization?"
+]
