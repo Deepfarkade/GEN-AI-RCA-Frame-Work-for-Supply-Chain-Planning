@@ -16,7 +16,7 @@ from utils.vanna_calls import generate_sql_cached, run_sql_cached
 
 os.environ['REQUESTS_CA_BUNDLE'] = 'cert.crt'
 # Disable SSL verification for the request to ask.vanna.ai
-requests.get('https://ask.vanna.ai/rpc', verify=False)
+requests.get('https://ask.vanna.ai/rpc', verify='cert.crt')
 setup_connexion()
 
 TF_ENABLE_ONEDNN_OPTS = 0
