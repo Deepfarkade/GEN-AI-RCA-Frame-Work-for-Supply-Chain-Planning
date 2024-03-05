@@ -1,17 +1,11 @@
 import streamlit as st
 import os
 import json
-import requests
 import pandas as pd
 import spacy
 from streamlit_chat import message
-from langchain.llms import CTransformers
 from langchain.memory import ConversationBufferWindowMemory
-from langchain.embeddings import SentenceTransformerEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.chains import RetrievalQA
-from constants import CHROMA_SETTINGS
-from utils.setup import setup_connexion, setup_session_state
+from utils.setup import setup_connexion
 from utils.vanna_calls import generate_sql_cached, run_sql_cached
 
 
